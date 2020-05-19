@@ -1,7 +1,7 @@
-
-#alot of print statements for debugging purposes but they help understand what is going on
-
-message = "peter piper picked a peck of pickled peppers"
+import sys
+#pass text file using command line argument
+input_file = open(sys.argv[1])
+message = input_file.read()
 encoded = []
 
 def encoder():
